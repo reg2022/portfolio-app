@@ -9,7 +9,7 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4 
             - name: Build image
-              run:  docker build -t ${{ secrets.DOCKER_USERNAME }}/ciportfolio .
+              run:  docker build -t ${{ secrets.DOCKERS_USERNAME }}/ciportfolio .
             - name: Docker login
               uses: docker/login-action@v4
               with:
